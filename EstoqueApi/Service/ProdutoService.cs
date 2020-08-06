@@ -58,6 +58,8 @@ namespace EstoqueApi.Service
 
         public async Task<int> CriarProduto(ProdutoDTO produtoDTO)
         {
+
+
             var produto = new ProdutoEntity()
             {
                 Nome = produtoDTO.Nome,
