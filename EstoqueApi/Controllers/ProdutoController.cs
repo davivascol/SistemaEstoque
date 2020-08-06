@@ -17,13 +17,11 @@ namespace EstoqueApi.Controllers
     [ApiController]
     public class ProdutoController : ControllerBase
     {
-        private readonly SqLiteDbContext _context;
-        private readonly IProdutoService produtoService;
+        private readonly IProdutoService _produtoService;
 
-        public ProdutoController(SqLiteDbContext context, IProdutoService _produtoService)
+        public ProdutoController(IProdutoService produtoService)
         {
-            _context = context;
-            produtoService = _produtoService;
+            _produtoService = produtoService;
         }
 
         // GET: api/Products
@@ -31,7 +29,7 @@ namespace EstoqueApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetProdutos()
         {
-            return Ok(await produtoService.ListarProdutos());
+            return Ok(await _produtoService.ListarProdutos());
         }
 
         //// GET: api/Products
@@ -47,7 +45,7 @@ namespace EstoqueApi.Controllers
         {
             try
             {
-                var produto = await produtoService.RecuperarProduto(id);
+                var produto = await _produtoService.RecuperarProduto(id);
                 return Ok(produto);
             }
             catch (Exception ex)
@@ -83,7 +81,7 @@ namespace EstoqueApi.Controllers
 
             try
             {
-                await produtoService.EditarProduto(produto);
+                await _produtoService.EditarProduto(produto);
                 return Ok();
             }
             catch (Exception ex)
@@ -132,7 +130,7 @@ namespace EstoqueApi.Controllers
         {
             try 
             {
-                await produtoService.CriaProduto(produto);
+                await _produtoService.CriarProduto(produto);
                 return Ok();
             }
             catch (Exception ex)
@@ -158,7 +156,7 @@ namespace EstoqueApi.Controllers
         {
             try
             {
-                await produtoService.DeletarProduto(id);
+                await _produtoService.DeletarProduto(id);
                 return Ok(id);
             }
             catch (Exception ex)

@@ -10,16 +10,16 @@ namespace EstoqueApi.Service
 {
     public class ProdutoService : IProdutoService
     {
-        private IProdutoRepository produtoRepository;
+        private IProdutoRepository _produtoRepository;
 
-        public ProdutoService(IProdutoRepository _produtoRepository)
+        public ProdutoService(IProdutoRepository produtoRepository)
         {
-            produtoRepository = _produtoRepository;
+            _produtoRepository = produtoRepository;
         }
 
         public async Task<IEnumerable<ProdutoDTO>> ListarProdutos()
         {
-            var produtos = await produtoRepository.ListarProdutos();
+            var produtos = await _produtoRepository.ListarProdutos();
             var produtosDTO = produtos.Select(p => new ProdutoDTO()
             {
                 Id = p.Id,
@@ -33,10 +33,7 @@ namespace EstoqueApi.Service
 
         public async Task<ProdutoDTO> RecuperarProduto(int id)
         {
-            var produto = await produtoRepository.RecuperarProduto(id);
-
-            if(produto == null)
-                throw new Exception("Produto não foi encontrado");
+            var produto = await _produtoRepository.RecuperarProduto(id);
 
             return new ProdutoDTO()
             {
@@ -56,10 +53,10 @@ namespace EstoqueApi.Service
                 Quantidade = produtoDTO.Quantidade,
                 Valor = produtoDTO.Valor
             };
-            return await produtoRepository.EditarProduto(produto);
+            return await _produtoRepository.EditarProduto(produto);
         }
 
-        public async Task<int> CriaProduto(ProdutoDTO produtoDTO)
+        public async Task<int> CriarProduto(ProdutoDTO produtoDTO)
         {
             var produto = new ProdutoEntity()
             {
@@ -67,12 +64,12 @@ namespace EstoqueApi.Service
                 Quantidade = produtoDTO.Quantidade,
                 Valor = produtoDTO.Valor
             };
-            return await produtoRepository.CriarProduto(produto);
+            return await _produtoRepository.CriarProduto(produto);
         }
 
         public async Task<int> DeletarProduto(int id)
         {
-            return await produtoRepository.DeletarProduto(id);
+            return await _produtoRepository.DeletarProduto(id);
         }
     }
 }

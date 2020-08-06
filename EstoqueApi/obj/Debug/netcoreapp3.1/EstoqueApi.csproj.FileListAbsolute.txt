@@ -282,7 +282,6 @@ C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\runtimes\win-x8
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csprojAssemblyReference.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.AssemblyInfoInputs.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.AssemblyInfo.cs
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.RazorTargetAssemblyInfo.cache
@@ -301,3 +300,4 @@ C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.Ident
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csproj.CoreCompileInputs.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csprojAssemblyReference.cache

@@ -11,7 +11,7 @@ namespace EstoqueApi.Service
         public Task<IEnumerable<ProdutoDTO>> ListarProdutos();
         public Task<ProdutoDTO> RecuperarProduto(int id);
         public Task<int> EditarProduto(ProdutoDTO produtoDTO);
-        public Task<int> CriaProduto(ProdutoDTO produtoDTO);
+        public Task<int> CriarProduto(ProdutoDTO produtoDTO);
         public Task<int> DeletarProduto(int id);
     }
 }

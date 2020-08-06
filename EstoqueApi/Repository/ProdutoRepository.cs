@@ -23,6 +23,10 @@ namespace EstoqueApi.Repository
         public async Task<ProdutoEntity> RecuperarProduto(int id)
         {
             var produto = await _context.Produtos.FindAsync(id);
+
+            if (produto == null)
+                throw new Exception("Produto não foi encontrado");
+
             return produto;
         }
 
