@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EstoqueApi.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace EstoqueApi.Repository
 {
     public class SqLiteDbContext : DbContext
     {
-        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<ProdutoEntity> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

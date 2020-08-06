@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EstoqueApi.Repository
+namespace EstoqueApi.Domain.Entities
 {
-    public class Produto
+    public class ProdutoEntity
     {
         [Key]
         public int Id { get; set; }

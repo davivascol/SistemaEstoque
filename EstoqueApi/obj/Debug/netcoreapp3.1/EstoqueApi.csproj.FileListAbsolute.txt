@@ -285,8 +285,6 @@ C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\runtimes\win\li
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csprojAssemblyReference.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.AssemblyInfoInputs.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.AssemblyInfo.cs
-C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csproj.CoreCompileInputs.cache
-C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.RazorTargetAssemblyInfo.cache
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csproj.CopyComplete
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\staticwebassets\EstoqueApi.StaticWebAssets.Manifest.cache
@@ -294,3 +292,12 @@ C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\staticwebassets
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.dll
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.pdb
 C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.genruntimeconfig.cache
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.csproj.CoreCompileInputs.cache
+C:\Dev\Backend\SistemaEstoque\EstoqueApi\obj\Debug\netcoreapp3.1\EstoqueApi.MvcApplicationPartsAssemblyInfo.cache
