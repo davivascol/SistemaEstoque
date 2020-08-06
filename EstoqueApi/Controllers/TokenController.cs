@@ -47,11 +47,7 @@ namespace EstoqueApi.Controllers
                 new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-                new Claim("Id", UserId),
-                new Claim("FirstName", FirstName),
-                new Claim("LastName", LastName),
-                new Claim("UserName", UserName),
-                new Claim("Email", Email)
+
                 //new Claim("Id", user.UserId.ToString()),
                 //new Claim("FirstName", user.FirstName),
                 //new Claim("LastName", user.LastName),

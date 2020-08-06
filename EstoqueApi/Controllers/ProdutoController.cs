@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace EstoqueApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProdutoController : ControllerBase
@@ -26,7 +27,7 @@ namespace EstoqueApi.Controllers
         }
 
         // GET: api/Products
-        [Authorize]
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> GetProdutos()
         {
