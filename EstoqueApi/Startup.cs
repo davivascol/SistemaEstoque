@@ -40,7 +40,7 @@ namespace EstoqueApi
                                       builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                                   });
             });
-            //var connection = Configuration.
+
             services.AddControllers();
             services.AddDbContext<SqLiteDbContext>();
             services.AddTransient<IProdutoRepository, ProdutoRepository>();

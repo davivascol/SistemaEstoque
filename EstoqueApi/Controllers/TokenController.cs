@@ -29,22 +29,22 @@ namespace EstoqueApi.Controllers
         public async Task<IActionResult> Post()
         {
 
-                var claims = new[] {
+            var claims = new[] {
                 new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
 
                 };
 
-                    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
 
-                    var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-                    var token = new JwtSecurityToken(_configuration["Jwt:Issuer"], _configuration["Jwt:Audience"], claims, expires: DateTime.UtcNow.AddDays(1), signingCredentials: signIn);
+            var token = new JwtSecurityToken(_configuration["Jwt:Issuer"], _configuration["Jwt:Audience"], claims, expires: DateTime.UtcNow.AddDays(1), signingCredentials: signIn);
 
-                    TokenDTO tokenDTO = new TokenDTO() { Token = new JwtSecurityTokenHandler().WriteToken(token) };
+            TokenDTO tokenDTO = new TokenDTO() { Token = new JwtSecurityTokenHandler().WriteToken(token) };
 
-                    return Ok(tokenDTO);
+            return Ok(tokenDTO);
         }
     }
 }

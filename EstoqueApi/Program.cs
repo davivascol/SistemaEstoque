@@ -32,39 +32,6 @@ namespace EstoqueApi
             {
                 //Cria arquivo Sqlite quando nao houver
                 context.Database.EnsureCreated();
-
-                // Add reminders.
-                //context.Produtos.Add(new Produto
-                //{
-                //    Nome = "Macarrao",
-                //    Quantidade = 10,
-                //    Valor = 5
-                //});
-                //context.Produtos.Add(new Produto
-                //{
-                //    Nome = "Frango",
-                //    Quantidade = 7,
-                //    Valor = 9
-                //});
-                //context.SaveChanges();
-
-                //// Fetch Reminders
-                //var produtos = context.Produtos.ToArray();
-                //foreach (var produto in produtos)
-                //{
-                //    Console.WriteLine($"{produto.Nome}");
-                //}
-
-                //// Remove a reminder
-                //context.Database.ExecuteSqlRaw(
-                //    "DELETE FROM Produtos WHERE Nome = {0}", "Feijao");
-
-                //// Fetch Reminders
-                //var Produtos = context.Produtos.ToArray();
-                //foreach (var produto in Produtos)
-                //{
-                //    Console.WriteLine($"{produto.Nome}");
-                //}
             }
         }
     }
