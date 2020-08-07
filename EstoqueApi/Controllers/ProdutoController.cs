@@ -69,6 +69,11 @@ namespace EstoqueApi.Controllers
         {
             try 
             {
+                if (produto.Nome == null || produto.Nome == "")
+                {
+                    return BadRequest();
+                }
+
                 await _produtoService.CriarProduto(produto);
                 return Ok();
             }
